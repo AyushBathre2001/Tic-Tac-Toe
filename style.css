@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+   
+}
+
+nav{
+    width: 100%;
+    height: 7vh;
+    background-color: #333;
+    color: white;
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+    font-family: 'Roboto Mono', monospace;
+}
+
+
+
+.main{
+    width: 100%;
+    height: 93vh;
+    background-image: url('images/bg.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.overlay{
+   
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.816);
+}
+
+
+.gameContent{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
+   
+    padding-top: 50px;
+   
+}
+.container{
+  
+    display: grid;
+    grid-template-rows: repeat(3,10vw);
+    grid-template-columns: repeat(3,10vw);
+    
+}
+
+.box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 10vw;
+    border: 1px solid black;
+    font-family: 'Roboto Mono', monospace;
+}
+
+.box:hover{
+    background-color: rgb(248, 242, 248);
+    cursor: pointer;
+}
+
+.bt{
+    border-top: none;
+}
+.bl{
+    border-left: none;
+}
+
+.br{
+    border-right: none;
+}
+.bb{
+    border-bottom: none;
+}
+
+.gameinfo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: calc(93vh - 512.4px);
+  
+}
+
+.info{
+    font-size: 2vw;
+}
+
+#reset{
+    font-size: 1vw;
+    width: 6vw;
+    height: 2.5vw;
+    border: none;
+    outline: none;
+    background-color: rgb(234, 30, 142);
+    border-radius: 10px;
+    margin-top: 20px;
+    color: white;
+}
+
+.image img{
+    width: 0px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    padding-top: 10%;
+    transform: translate(-50%,-50%);
+    opacity: 0.5;
+    transition: width 1s;
+}
+
+
+@media  screen and (max-width:900px){
+    .gameinfo{
+        height: 10vh;
+    }
+
+    #reset{
+        font-size: 1.5vw;
+        width: 7vw;
+        height: 2.5vw;
+       
+    }
+}
+
+
+
+
