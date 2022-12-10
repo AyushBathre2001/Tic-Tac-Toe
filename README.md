@@ -5,7 +5,7 @@ I created a Tic Tac Toe Game using HTML, CSS, and JavaScript.Tic-tac-toe, nought
 
 ## Screenshots
 
-
+![tictactoe](https://user-images.githubusercontent.com/97656404/206859496-2c3dd1f5-1dc8-4c04-831b-50573acd1262.png)
 
 ## Image
 
